@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sangguniang Kabataan - City of Mati Federation Services</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+    body { display: flex; height: 100vh; background: linear-gradient(135deg, #ff6b6b, #4169e1, #4caf50, #b39ddb); background-size: 400% 400%; animation: colorShift 10s infinite alternate; overflow: hidden; padding-top: 60px; }
+    @keyframes colorShift { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+
+    .sidebar { 
+      width: 250px; 
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 1.5rem; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: flex-start; 
+      border-right: 2px solid #4169e1; 
+      margin-top: 25px; 
+      z-index: 0; }
+    .sidebar h2 { color: #4169e1; font-size: 1.5rem; margin-bottom: 1rem; font-weight: bold; }
+    .sidebar a { text-decoration: none; color: #333; padding: 0.5rem; margin: 0.5rem 0; border-radius: 8px; transition: background-color 0.3s; }
+    .sidebar a:hover { background-color: #4169e1; color: #fff; }
+
+    .content { flex: 1; padding: 2rem; overflow-y: auto; margin-top: 60px; }
+    .content h1 { text-align: center; color: #ffffff; margin-bottom: 1rem; font-weight: bold; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+    .content p { text-align: center; color: #ffffff; font-size: 1.1rem; margin-bottom: 2rem; }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; }
+
+    .service-card { 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      background-color: transparent;
+      padding: 2rem 1.5rem; 
+      min-height: 350px; 
+      border-radius: 12px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+      text-align: center; }
+
+    .service-card:hover { 
+      background-color: rgba(65, 105, 225, 0.6); 
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+      transform: translateY(-10px); 
+    }
+
+    .service-title { 
+      color: white; 
+      font-size: 1.3rem; 
+      margin-top: 3rem;
+      font-weight: bold; 
+    }
+
+    .service-description { color: #666; font-size: 1rem; margin-bottom: 1rem; }
+    .service-button { padding: 0.4rem 1rem; background-color: #4169e1; color: #fff; border: none; border-radius: 6px; cursor: pointer; transition: background-color 0.3s; text-decoration: none; margin-top: auto; }
+    .service-button:hover { background-color: #27408b; }
+
+    
+    .service-title i { 
+      font-size: 5rem; 
+      color: white;  
+      margin-bottom: 0.5rem; 
+    }
+  </style>
+</head>
+
+<body>
+    ody>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); background-size: cover; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="images/logo1.png" style="width: 60px; height: 60px; border-radius: 50%;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house px-2"></i>Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone-alt px-2"></i>Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-h px-2"></i>More</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-info-circle px-2"></i>About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="services.html"><i class="fa-solid fa-bullseye px-2"></i>Services</a></li>
+                <li><a class="dropdown-item" href="portfolio.html"><i class="fa-solid fa-users px-2"></i>Portfolio</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gavel px-2"></i>Testimonials</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-history px-2"></i>History</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment-dots px-2"></i>Feedback</a></li>
+              </ul>
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <a href="logout.html" class="text-decoration-none">
+              <i class="fa-solid fa-right-from-bracket px-2"></i>Logout
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    
+    <style>
+      .nav-link, .dropdown-item {
+        color: #aaa; 
+      }
+    
+      .nav-link i, .dropdown-item i {
+        color: #aaa; 
+      }
+    
+      .nav-link:hover, .dropdown-item:hover,
+      .nav-link.active, .dropdown-item.active {
+        color: #f8f9fa; 
+      }
+    
+      .nav-link:hover i, .dropdown-item:hover i,
+      .nav-link.active i, .dropdown-item.active i {
+        color: #f8f9fa; 
+      }
+    </style>
+
+  
+  <div class="sidebar">
+    <h2>SK Services</h2>
+    <a href="#"><i class="fa-solid fa-users"></i> Youth Programs</a>
+    <a href="#"><i class="fa-solid fa-hands-helping"></i> Community Outreach</a>
+    <a href="#"><i class="fa-solid fa-chalkboard-teacher"></i> Leadership Training</a>
+    <a href="#"><i class="fa-solid fa-graduation-cap"></i> Scholarship Programs</a>
+  </div>
+
+  <div class="content">
+    <h1>Our Services</h1>
+    <p>Explore the services we offer to the youth and the community.</p>
+
+    <div class="gallery">
+      <div class="service-card">
+        <i class="fa-solid fa-users" style="font-size: 4rem; color: white;"></i>
+        <div class="service-title">Youth Programs</div>
+        <p class="service-description">Empowering youth with various programs.</p>
+        <a href="#" class="service-button">Learn More</a>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-hands-helping" style="font-size: 4rem; color: white;"></i>
+        <div class="service-title">Community Outreach</div>
+        <p class="service-description">Connecting with the community through outreach efforts.</p>
+        <a href="#" class="service-button">Learn More</a>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-chalkboard-teacher" style="font-size: 4rem; color: white;"></i>
+        <div class="service-title">Leadership Training</div>
+        <p class="service-description">Training youth leaders for a brighter future.</p>
+        <a href="#" class="service-button">Learn More</a>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-graduation-cap" style="font-size: 4rem; color: white;"></i>
+        <div class="service-title">Scholarship Programs</div>
+        <p class="service-description">Providing scholarships to deserving youth.</p>
+        <a href="#" class="service-button">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

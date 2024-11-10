@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="fontawesome/js/all.js"></script>
+    <style>
+      @keyframes colorShift {
+        0% { background-color: #ff4e50; }
+        25% { background-color: #1e90ff; }
+        50% { background-color: #32cd32; }
+        75% { background-color: #8a2be2; }
+        100% { background-color: #ff4e50; }
+      }
+
+      body {
+        animation: colorShift 15s infinite alternate;
+        background-size: cover;
+        font-family: Arial, sans-serif;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      .card {
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+        box-shadow: 2px;
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px rgba(15, 15, 15, 0.3);
+      }
+
+      .navbar {
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .testimonials {
+        text-align: center;
+        margin-top: 160px;
+      }
+
+      .testimonials h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .testimonials p {
+        font-size: 18px;
+        color: #ffffff;
+      }
+
+      .testimonial-cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .testimonial-card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s, background-color 0.3s;
+        padding-bottom: 20px;
+      }
+
+      .testimonial-card:hover {
+        transform: scale(1.05);
+        background-color: #00796b;
+      }
+
+      .testimonial-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #00796b; 
+        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .testimonial-text {
+        color: #00796b; 
+        font-size: 14px;
+        padding: 0 10px;
+        line-height: 1.4;
+      }
+
+      .testimonial-card:hover .testimonial-title,
+      .testimonial-card:hover .testimonial-text,
+      .testimonial-card:hover .profile-info h4,
+      .testimonial-card:hover .profile-info p {
+        color: #fff;
+      }
+
+      .card-content {
+        padding: 20px;
+        color: #00796b;
+      }
+
+      .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+      }
+
+      .profile img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+      }
+
+      .profile-info h4 {
+        font-size: 16px;
+        margin: 5px 0 0;
+        color: #00796b;
+      }
+
+      .profile-info p {
+        font-size: 12px;
+        margin: 0;
+        color: #777;
+      }
+
+      .quote-icon-container {
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        width: 80px;
+        height: 80px;
+        background-color: #00796b;
+        border-radius: 0 0 80px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .quote-icon {
+        font-size: 30px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HOME PAGE</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="fontawesome/js/all.js"></script>
+        <style>
+          
+          @keyframes colorShift {
+            0% { background-color: #ff4e50; }  
+            25% { background-color: #1e90ff; } 
+            50% { background-color: #32cd32; } 
+            75% { background-color: #8a2be2; } 
+            100% { background-color: #ff4e50; } 
+          }
+    
+          body {
+            animation: colorShift 15s infinite alternate;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+          }
+    
+          p {
+            line-height: 1.6;
+          }
+    
+          
+          .card {
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            box-shadow: 2px;
+          }
+    
+          .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px rgba(15, 15, 15, 0.3);
+          }
+    
+          
+          .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          }
+        </style>
+      </head>
+      <body>
+        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(0, 0, 0, 0.5); backdrop-filter: blur(10px); background-size: cover; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img src="images/logo1.png" style="width: 60px; height: 60px; border-radius: 50%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><i class="fa-solid fa-house px-2"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"><i class="fa-solid fa-phone-alt px-2"></i>Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-h px-2"></i>More</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-info-circle px-2"></i>About Us
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="services.html"><i class="fa-solid fa-bullseye px-2"></i>Services</a></li>
+                    <li><a class="dropdown-item" href="portfolio.html"><i class="fa-solid fa-users px-2"></i>Portfolio</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-gavel px-2"></i>Testimonials</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-history px-2"></i>History</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-comment-dots px-2"></i>Feedback</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <span class="navbar-text">
+                <a href="logout.html" class="text-decoration-none">
+                  <i class="fa-solid fa-right-from-bracket px-2"></i>Logout
+                </a>
+              </span>
+            </div>
+          </div>
+        </nav>
+        
+        <style>
+          .nav-link, .dropdown-item {
+            color: #aaa; 
+          }
+        
+          .nav-link i, .dropdown-item i {
+            color: #aaa; 
+          }
+        
+          .nav-link:hover, .dropdown-item:hover,
+          .nav-link.active, .dropdown-item.active {
+            color: #f8f9fa; 
+          }
+        
+          .nav-link:hover i, .dropdown-item:hover i,
+          .nav-link.active i, .dropdown-item.active i {
+            color: #f8f9fa; 
+          }
+        </style>
+
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+      <p>What our friends say</p>
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <div class="quote-icon-container">
+            <div class="quote-icon">“</div>
+          </div>
+          <div class="card-content">
+            <h3 class="testimonial-title">Love the simplicity</h3>
+            <p class="testimonial-text">“The team was responsive and supportive throughout the process. They not only met our expectations but also added extra value in the final product. Simply the best!”</p>
+            <div class="profile">
+              <img src="images/friendss.jpg" alt="Allan Collins">
+              <div class="profile-info">
+                <h4>Allan Collins</h4>
+                <p>Managing Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon-container">
+            <div class="quote-icon">“</div>
+          </div>
+          <div class="card-content">
+            <h3 class="testimonial-title">Excellent Designs</h3>
+            <p class="testimonial-text">“Efficient, reliable, and results-oriented. Visually appealing website, improved online visibility. Highly recommended!”</p>
+            <div class="profile">
+              <img src="images/tanya.jfif" alt="Tanya Grant">
+              <div class="profile-info">
+                <h4>Tanya Grant</h4>
+                <p>CEO & Founder</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon-container">
+            <div class="quote-icon">“</div>
+          </div>
+          <div class="card-content">
+            <h3 class="testimonial-title">Efficient and Reliable</h3>
+            <p class="testimonial-text">“Best decision we made. Stunning website, exceptional support. Always available and prompt issue resolution. Hassle-free experience!”</p>
+            <div class="profile">
+              <img src="images/friends.jpg" alt="Clay Washington">
+              <div class="profile-info">
+                <h4>Clay Washington</h4>
+                <p>Fashion Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<footer style="background-color: #2c3e50; color: #ffffff; padding: 40px 0; margin-top: 50px;">
+    <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+            
+            <div class="col-md-4 text-center text-md-left mb-4 mb-md-0">
+                <img src="images/logo1.png" alt="Logo" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 20px;">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Phone: </span> <a href="tel:09933910521" style="color: #ffffff;">09933910521</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Email: </span> <a href="mailto:skcf@gmail.com" style="color: #ffffff;">skcf@gmail.com</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <span>Website: </span> <a href="https://skfed.com" target="_blank" style="color: #ffffff;">skfed.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <h5>Follow Us</h5>
+                <ul class="social-icons list-unstyled d-flex justify-content-center">
+                    <li style="margin-right: 20px;">
+                        <a href="#" style="color: #ffffff; font-size: 24px;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li style="margin-right: 20px;">
+                        <a href="#" style="color: #ffffff; font-size: 24px;">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li style="margin-right: 20px;">
+                        <a href="#" style="color: #ffffff; font-size: 24px;">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 text-center text-md-right">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" style="color: #ffffff;">Home</a></li>
+                    <li><a href="contact.html" style="color: #ffffff;">Contact Us</a></li>
+                    <li><a href="services.html" style="color: #ffffff;">Services</a></li>
+                    <li><a href="portfolio.html" style="color: #ffffff;">Portfolio</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row text-center mt-4">
+            <div class="col-12">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>
